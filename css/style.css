@@ -1,51 +1,51 @@
 * {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
+   padding: 0px;
+   margin: 0px;
+   border: 0px;
 }
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-  outline: none;
+   box-sizing: border-box;
+   outline: none;
 }
 html,
 body {
-  height: 100%;
-  min-width: 320px;
+   height: 100%;
+   min-width: 320px;
 }
 body {
-  color: #000;
-  line-height: 1;
-  font-family: "Arial";
-  font-size: 1rem;
+   color: #000;
+   line-height: 1;
+   font-family: "Arial";
+   font-size: 1rem;
 }
 input,
 button,
 textarea {
-  font-family: "Arial";
-  font-size: inherit;
+   font-family: "Arial";
+   font-size: inherit;
 }
 button {
-  cursor: pointer;
-  color: inherit;
-  background-color: inherit;
+   cursor: pointer;
+   color: inherit;
+   background-color: inherit;
 }
 a {
-  color: inherit;
+   color: inherit;
 }
 a:link,
 a:visited {
-  text-decoration: none;
+   text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
-}
+   text-decoration: none;
+} 
 ul li {
-  list-style: none;
+   list-style: none;
 }
 img {
-  vertical-align: top;
+   vertical-align: top;
 }
 h1,
 h2,
@@ -53,118 +53,107 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: inherit;
-  font-size: inherit;
+   font-weight: inherit;
+   font-size: inherit;
+}
+.lock body {
+   overflow: hidden;
+   touch-action: none;
 }
 .wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
 }
 .wrapper > main {
-  flex: 1 1 auto;
+   flex: 1 1 auto;
 }
 .wrapper > * {
-  min-width: 0;
+   min-width: 0;
 }
 [class*=__container] {
-  margin: 0 auto;
-  max-width: 64rem;
-  box-sizing: content-box;
+   margin: 0 auto;
+   max-width: 64rem;
+   box-sizing: content-box;
 }
-@media (max-width: 65.875em) {
-  [class*=__container] {
-    max-width: 60.625rem;
-  }
-}
-@media (max-width: 61.99875em) {
-  [class*=__container] {
-    max-width: 46.875rem;
-  }
-}
-@media (max-width: 47.99875em) {
-  [class*=__container] {
-    max-width: none;
-    padding: 0 0.9375rem;
-  }
+.footer__container {
+   text-align: center;
+   line-height: 1.2;
+   padding-bottom: 30px;
 }
 .wrapper {
-  background: #000;
-  color: #fff;
-  font-size: 1rem;
+   background: #000;
+   color: #fff;
+   font-size: 1rem;
 }
 .page {
-  display: grid;
-  max-width: 790px;
-  margin: 0 auto;
+   display: grid;
+   max-width: 790px;
+   margin: 0 auto;
 }
 .calc {
-  place-self: center;
-  display: grid;
+   place-self: center;
+   display: grid;
 }
 .screen-calc {
-  resize: none;
-  background: #000;
-  color: #fff;
-  display: block;
-  align-self: center;
-  justify-self: end;
-  text-align: right;
-  font-size: 3.75rem;
-  padding: 20px;
-  height: 6.25rem;
-  overflow: hidden;
-  width: 790px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+   background: #000;
+   color: #fff;
+   display: block;
+   align-self: center;
+   justify-self: end;
+   text-align: right;
+   font-size: 3.75rem;
+   padding: 20px;
+   height: 6.25rem;
+   overflow: hidden;
+   width: 790px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
 }
 .buttons {
-  display: grid;
-  place-items: center;
-  grid-gap: 10px;
-  grid-template-columns: repeat(10, 70px);
+   display: grid;
+   place-items: center;
+   grid-gap: 10px;
+   grid-template-columns: repeat(10, 70px);
 }
 .button {
-  height: 50px;
-  width: 70px;
-  background: rgb(31, 31, 31);
-  border-radius: 30px;
-  transition: all 0.1s ease 0s;
-  border: 1px solid transparent;
+   height: 50px;
+   width: 70px;
+   background: rgb(31, 31, 31);
+   border-radius: 30px;
+   transition: all 0.1s ease 0s;
+   border: 1px solid transparent;
 }
 .button:active {
-  border: 1px solid rgb(139, 139, 139);
-  opacity: 0.5;
+   border: 1px solid rgb(139, 139, 139);
+   opacity: 0.5;
 }
 .button.action {
-  background: rgb(55, 55, 55);
-  border: 1px solid rgb(130, 130, 130);
+   background: rgb(55, 55, 55);
+   border: 1px solid rgb(130, 130, 130);
 }
 .hidden {
-  display: none;
+   display: none;
 }
 sup {
-  font-size: 0.8rem;
+   font-size: 0.8rem;
 }
 sub {
-  font-size: 0.8rem;
+   font-size: 0.8rem;
 }
 .bg-grey {
-  background: rgb(130, 130, 130);
-  color: #000;
+   background: rgb(130, 130, 130);
+   color: #000;
 }
 .main-calc {
-  font-size: 1.5625rem;
+   font-size: 1.5625rem;
 }
 .bg-orange {
-  background: rgb(227, 124, 14);
-  font-size: 1.875rem;
+   background: rgb(227, 124, 14);
+   font-size: 1.875rem;
 }
 .bg-dark-grey {
-  background: rgb(55, 55, 55);
-}
-.zero {
-  position: relative;
+   background: rgb(55, 55, 55);
 }
