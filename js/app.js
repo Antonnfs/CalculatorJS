@@ -6,7 +6,7 @@ let sign = "";	// operation sign
 let finish = false;	//equal flag
 let memory = ""; 	// Memory
 
-const digit = ["0", "00", "1", "2",	"3", "4", "5", "6", "7", "8", "9", ".", "π", "e", "Rand", ];
+const digit = ["0", "00", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "π", "e", "Rand", ];
 const action = ["-", "+", "x", "÷", "%", "x!", "x2", "x3", "xy", "yx", "ex", "2x", "10x", "1/x", "2√x", "3√x", "y√x", "ln", "log2", "log10", "logy", "EE", "sin", "cos", "tan", "sinh", "cosh", "tanh", "sin-1", "cos-1", "tan-1", "sinh-1", "cosh-1", "tanh-1"];
 const out = document.querySelector(".screen-calc p");   //output screen
 const type = document.querySelector(".type");	// Rad/Deg
