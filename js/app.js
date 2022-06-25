@@ -18,7 +18,6 @@ window.addEventListener("click", function (e) {
 	}
 	out.textContent = 0;
 	let prop = e.target.textContent;
-	//========================================================================================================================================================
 	if (prop === "+/-") {	// Change the sign
 		a = -a;
 		b = -b;
@@ -33,6 +32,7 @@ window.addEventListener("click", function (e) {
 				finish = false;
 				out.textContent = a;
 			} else if (a !== "" && sign === "") {
+				clearAll();
 				a = Math.PI.toFixed(8);
 				prop = "";
 				finish = false;
@@ -57,6 +57,7 @@ window.addEventListener("click", function (e) {
 				finish = false;
 				out.textContent = a;
 			} else if (a !== "" && sign === "") {
+				clearAll();
 				a = Math.E.toFixed(8);
 				prop = "";
 				finish = false;
@@ -81,6 +82,7 @@ window.addEventListener("click", function (e) {
 				finish = false;
 				out.textContent = a;
 			} else if (a !== "" && sign === "") {
+				clearAll();
 				a = Math.random().toFixed(8);
 				prop = "";
 				finish = false;
@@ -112,7 +114,7 @@ window.addEventListener("click", function (e) {
 		console.log(a, sign, b);
 		return;
 	}
-	//========================================================================================================================================================
+	
 	// Actions +, -, /, * ...
 	if (action.includes(prop)) {
 		sign = prop;
