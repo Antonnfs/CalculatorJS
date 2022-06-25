@@ -111,7 +111,6 @@ window.addEventListener("click", function (e) {
 			b += prop;
 			out.textContent = b;
 		}
-		console.log(a, sign, b);
 		return;
 	}
 	
@@ -122,7 +121,6 @@ window.addEventListener("click", function (e) {
 			if (a !== "" && b !== "" && sign !== "") {
 				a = calculate();
 				finish = true;
-				console.log(a);
 				out.textContent = a;
 			}
 		a = calculate();
@@ -133,7 +131,6 @@ window.addEventListener("click", function (e) {
 				a = factorial(a);
 				finish = true;
 				out.textContent = a;
-				console.log(a);
 		} else if (a !== "" && b !== "") {
 			a = calculate();
 			b = "";
@@ -142,7 +139,6 @@ window.addEventListener("click", function (e) {
 		} else {
       out.textContent = sign;
 		}
-		console.log(a, sign, b );
 		return;
 	}
   	// если нажат =
@@ -153,7 +149,6 @@ window.addEventListener("click", function (e) {
 		b = "";
 		finish = true;
 		out.textContent = a;
-		console.log(a, b, sign);
 	}
 	addBrace(e);
 	calcMemory(e);  // Memory
@@ -218,19 +213,15 @@ function calculate() {
 		break; 
 		case "ln":
 			a = parseFloat((Math.log(a)).toFixed(8).toString());
-			console.log(a);
 		break; 
 		case "log10":
 			a = parseFloat((Math.log10(a)).toFixed(8).toString());
-			console.log(a);  
 		break; 
 		case "logy":
 			a = parseFloat((Math.log(a) / Math.log(b)).toFixed(8).toString());
-			console.log(a);  
 		break; 
 		case "log2":
 			a = parseFloat((Math.log2(a)).toFixed(8).toString());
-			console.log(a);  
 		break;  
 		case "EE":
 			a = parseFloat((a * Math.pow(10, b)).toFixed(8).toString());
@@ -238,7 +229,6 @@ function calculate() {
 	}
 	calculateSinCos();
 	finish = true;
-	console.log(a);
 	return a;
 }
 function calculateSinCos() {
@@ -284,7 +274,6 @@ function calculateSinCos() {
 			break;
 		}
 		finish = true;
-		console.log(a);
 		return a;
 	} else {
 		switch(sign) {
@@ -328,7 +317,6 @@ function calculateSinCos() {
 			break;
 		}
 		finish = true;
-		console.log(a);
 		return a;
 	}
 }
